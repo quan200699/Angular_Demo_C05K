@@ -1,0 +1,26 @@
+<form (ngSubmit)="submit()" id="category-form">
+  <div class="card card-secondary">
+    <div class="card-header">
+      <h3 class="card-title">Thông tin danh mục</h3>
+
+      <div class="card-tools">
+        <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip"
+                title="Collapse">
+          <i class="fas fa-minus"></i></button>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="name">Tên danh mục</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="category.name" name="name">
+      </div>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <a routerLink="/" class="btn btn-secondary">Hủy</a>
+      <input type="submit" value="Tạo mới" class="btn btn-success float-right">
+    </div>
+  </div>
+</form>

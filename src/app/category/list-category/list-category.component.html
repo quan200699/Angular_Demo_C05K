@@ -1,10 +1,16 @@
-<table>
+<table class="table table-bordered" id="table-category">
+  <thead>
   <tr>
-    <td>STT</td>
-    <td>Tên</td>
+    <th style="width: 10px">#</th>
+    <th>Tên danh mục</th>
   </tr>
-  <tr *ngFor="let category of listCategory;index as i">
+  </thead>
+  <tbody>
+  <tr *ngFor="let category of listCategory; index as i">
     <td>{{i + 1}}</td>
-    <td>{{category.name}}</td>
+    <td>
+      <a>{{category.name}}</a>
+    </td>
   </tr>
+  </tbody>
 </table>
